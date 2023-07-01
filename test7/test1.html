@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.20/vue.global.js"></script>
+    <title>Title</title>
+</head>
+<body>
+     <div id="app">
+         <div>
+             <button @click="des">減少</button>
+             <button @click="add">增加</button>
+             <br>
+             {{num}}
+             <div style="background-color:aquamarine;color: aqua" v-if="error">{{error}}</div>
+         </div>
+     </div>
+</body>
+<script src="test1.js"></script>
+</html>
