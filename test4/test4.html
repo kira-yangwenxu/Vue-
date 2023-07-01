@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.20/vue.global.js"></script>
+    <title>Title</title>
+</head>
+<body>
+        <div id="app">
+            {{name}}
+<!--            <div v-text="name"></div> v-text获取组件属性  第二种获取组件属性方式-->
+            <div v-html="html"></div> <!--一般直接使用{{}} 来获取html 代码是不会被解析 需要v-html属性来进行解析-->
+        </div>
+        <script src="test4.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.20/vue.global.js"></script>
+    <title>Title</title>
+</head>
+<body>
+      <div id="app"><!--容器-->
+        {{name}}
+  <!--  <div v-test="name"></div>  v-test获取组件属性 第二种获取组件方式,写到容器上面没有效果-->
+        <div v-html="html"></div><!--直接使用{{}}来获取html代码的话 是不会被解析-->
+      </div>
+      <script src="test1.js"></script>
+
+</body>
+</html>
