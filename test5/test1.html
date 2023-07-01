@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.20/vue.global.js"></script>
+    <title>Title</title>
+</head>
+<body>
+        <div id="app">
+<!--            <div v-bind="id">{{name}}</div>  绑定组件id属性 实现动态化设置-->
+                <div :id="id">{{name}}</div>  <!--绑定组件id 的简写方式-->
+                {{n =1 ? '白子' : '伊吕波'}} <!--表达式-->
+                <div v-show="false"> {{name}}</div> <!--s是否显示内容得指令-->
+                <div v-once>{{name}}</div> <!--只渲染一次-->
+                <a :[href]="value">伊吕波</a> <!--[]可用来绑定变化属性-->
+
+        </div>
+        <script src="test1.js"></script>
+</body>
+</html>
