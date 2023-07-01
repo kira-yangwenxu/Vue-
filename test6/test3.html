@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.20/vue.global.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+<!--      <div v-on:click="add">{{name}}</div> 绑定点击事件-->
+        <div>
+            <button @click="add">增加</button>
+            <button @click="des">减少</button>
+            <br>
+            {{num}}
+            <div style="background-color:blue;color: aliceblue" v-if="error">{{error}}</div>
+        </div>
+        <a href="https://ajc2l.one/" @click="go($event)">aa</a>
+        <a href="https://ajc2l.one"  @click.prevent="go2($event,'asdasd')">aa2</a>
+    </div>
+</body>
+<script src="test3.js"></script>
+</html>
