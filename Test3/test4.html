@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.20/vue.global.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div style="color: yellow">伊吕波</div>
+    <div id="app">
+      <a v-for="lessons in lessons">
+        {{lessons}}
+      </a>
+    </div>
+    <script>
+        window.lessons =[{name:'伊吕波'},{name:'白子'}];
+    </script>
+    <script src="test4.js"></script>
+</body>
+</html>
